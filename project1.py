@@ -22,10 +22,10 @@ print("Thank you! Here is the information we collected : ")
 print()
 
 # print information given by the user , it's data types and memory location..
-print(f"Name : {name}",("Type : ",type(name),"Memory Address : ",id(name)))
-print(f"Age : {age}",("Type : ",type(age),"Memory Address : ",id(age)))
-print(f"Height : {height}",("Type :",type(height),"Memory Address : ",id(height)))
-print(f"Favourite Number : {favourite_number}",("Type :",type(favourite_number),"Memory Address :",id(favourite_number)))
+print(f"Name : {name}"," ","Type :",type(name)," ","Memory Address : ",id(name))
+print(f"Age : {age}"," ","Type :",type(age)," ","Memory Address : ",id(age))
+print(f"Height : {height}"," ","Type :",type(height)," ","Memory Address : ",id(height))
+print(f"Favourite Number : {favourite_number}"," ","Type :",type(favourite_number)," ","Memory Address :",id(favourite_number))
 
 print()
 
