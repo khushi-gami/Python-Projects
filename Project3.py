@@ -72,13 +72,21 @@ while True:
 
         print()
 
-        for student in student_details:
+        if len(student_details) == 0:
 
-            for student_id,details in student.items():
-            
-                print(f"Student ID : {student_id} | Name : {details['Name']} | Age : {details['Age']} | Grade : {details['Grade']} | Subjects : {details['Subjects']}")
+            print("No students found !")
 
             print()
+
+        else:
+
+            for student in student_details:
+
+                for student_id,details in student.items():
+            
+                    print(f"Student ID : {student_id} | Name : {details['Name']} | Age : {details['Age']} | Grade : {details['Grade']} | Subjects : {details['Subjects']}")
+
+                    print()
 
     # |||||||||||||||||||||||||   UPDATE STUDENT INFORMATION  ||||||||||||||||||||||||
 
@@ -101,6 +109,8 @@ while True:
                     print("2. Subjects")
                     print("3. Both")
                     update_choice = int(input("Enter a option to update (1/2/3) : "))
+
+                    print()
 
         # ---------------------- Update student AGE -----------------------------
 
@@ -158,7 +168,13 @@ while True:
         
                         print()
                     
-                    break 
+                    else:
+
+                        print("Invalid update option!")
+
+                        print()
+
+                        break
 
         else:
             print(f"{update_student_id} Student ID does not exist!")
@@ -211,9 +227,21 @@ while True:
 
                 subjects.update(details["Subjects"])
 
-        print(subjects)
+        if len(subjects) == 0:
+
+            print("No subjects found !")
+
+            print()
+
+        else:
+
+            print("Subjects Offered : ")
+
+            for subject in subjects:
+
+                print("* ",subject)
             
-        print()
+            print()
 
     # |||||||||||||||||||||||||||||||   EXIT PROGRAMME  ||||||||||||||||||||||||||||||
 
